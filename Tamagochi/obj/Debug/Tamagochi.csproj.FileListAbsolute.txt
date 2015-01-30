@@ -4,3 +4,9 @@ D:\Programming\Practice\Tamagochi\Tamagochi\Tamagochi\bin\Debug\Tamagochi.pdb
 D:\Programming\Practice\Tamagochi\Tamagochi\Tamagochi\obj\Debug\Tamagochi.csprojResolveAssemblyReference.cache
 D:\Programming\Practice\Tamagochi\Tamagochi\Tamagochi\obj\Debug\Tamagochi.exe
 D:\Programming\Practice\Tamagochi\Tamagochi\Tamagochi\obj\Debug\Tamagochi.pdb
+D:\Programming\Practice\Tamagotchi\Tamagochi\bin\Debug\Tamagochi.exe.config
+D:\Programming\Practice\Tamagotchi\Tamagochi\obj\Debug\Tamagochi.exe
+D:\Programming\Practice\Tamagotchi\Tamagochi\obj\Debug\Tamagochi.pdb
+D:\Programming\Practice\Tamagotchi\Tamagochi\bin\Debug\Tamagochi.exe
+D:\Programming\Practice\Tamagotchi\Tamagochi\bin\Debug\Tamagochi.pdb
+D:\Programming\Practice\Tamagotchi\Tamagochi\obj\Debug\Tamagochi.csprojResolveAssemblyReference.cache
