@@ -26,26 +26,15 @@ namespace Tamagochi
             }
             var rand = new Random();
 
-            for (int i = 0; i < 20; i++)
+            while (true)
             {
                 foreach (var tamagotchy in tamagotchies)
                 {
-                    DoSomething((ActionType)rand.Next(1,5), tamagotchy);
+                    tamagotchy.DoSomething();
                     Thread.Sleep(1000);
                 }
             }
-            Console.ReadLine();
-        }
-
-        private static void DoSomething(ActionType type, Tamagotchi tamagotchi)
-        {
-            switch (type)
-            {
-                    case ActionType.Sleep: tamagotchi.GoBed(); break;
-                    case ActionType.GoWalk: tamagotchi.GoWalk(new Random().Next(1, 10)); break;
-                    case ActionType.Food: tamagotchi.AskFood(); break;
-                    case ActionType.AskAge: tamagotchi.Grow();break;
-            }
+             
         }
 
         private static void OnChange(object sender, TamagochiEventArgs args)

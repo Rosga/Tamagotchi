@@ -37,6 +37,18 @@ namespace Tamagochi
             Birthday = DateTime.Now;
         }
 
+        public void DoSomething()
+        {
+            var type = (ActionType) _rand.Next(1, 5);
+            switch (type)
+            {
+                case ActionType.Sleep: GoBed(); break;
+                case ActionType.GoWalk: GoWalk(new Random().Next(1, 10)); break;
+                case ActionType.Food: AskFood(); break;
+                case ActionType.AskAge: Grow(); break;
+            }
+        }
+
         private void FireOnChange(string message, ActionType action)
         {
             if (Change != null)

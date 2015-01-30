@@ -16,30 +16,30 @@ namespace Tamagochi
     public class TamagochiEventArgs : EventArgs
     {
         public string Message { get; set; }
-        public ActionType Action { get; set; }
+        public virtual ActionType Action { get; set; }
     }
 
     public class TamagochiFeedEventArgs : TamagochiEventArgs
     {
-        public new ActionType Action { get { return ActionType.Food; } }
+        public override ActionType Action { get { return ActionType.Food; } }
 
         public int FoodPoint { get; set; }
     }
     public class TamagochiSleepEventArgs : TamagochiEventArgs
     {
-        public new ActionType Action { get { return ActionType.Sleep; } }
+        public override ActionType Action { get { return ActionType.Sleep; } }
         public bool Sleep { get; set; }
     }
 
     public class TamagochiGoWalkEventArgs : TamagochiEventArgs
     {
-        public new ActionType Action { get { return ActionType.GoWalk; } }
+        public override ActionType Action { get { return ActionType.GoWalk; } }
         public int Street { get; set; }
     }
 
     public class TamagochiAskAgeEventArgs : TamagochiEventArgs
     {
-        public new ActionType Action { get { return ActionType.AskAge; } }
+        public override ActionType Action { get { return ActionType.AskAge; } }
         public TimeSpan Age { get; set; }
     }
 }
